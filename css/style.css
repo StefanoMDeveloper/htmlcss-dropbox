@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header */
+/* Disposizione */
+header{
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    font-size: 14px;
+}
+
+#main-nav{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+#main-nav::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo, .left-menu{
+    float: left;
+}
+
+.start, .right-menu{
+    float: right;
+}
+/* Disposizione */
+
+/* stile e colore */
+.logo{
+    margin: 0 2%;
+}
+
+.logo a img{
+    vertical-align: sub;
+}
+
+
+#main-nav ul li a{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+#main-nav ul li a:hover{
+    text-decoration: underline;
+}
+
+#main-nav ul{
+    display: inline-block;
+}
+
+
+#main-nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.start{
+    display: inline-block;
+    margin: 0 2%; 
+}
+
+.start a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(26, 84, 199);
+    padding: 5px 15px;
+}
+/* stile e colore */
+/* header */
