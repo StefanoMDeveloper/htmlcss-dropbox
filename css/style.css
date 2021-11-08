@@ -11,12 +11,15 @@ header{
     line-height: 80px;
     width: 100%;
     font-size: 14px;
+
 }
 
 #main-nav{
     height: 80px;
     position: fixed;
     width: 100%;
+    background-color: white;
+    z-index: 999;
 }
 
 #main-nav::after{
@@ -64,14 +67,169 @@ header{
 
 .start{
     display: inline-block;
-    margin: 0 2%; 
+    margin: 0 2%;
 }
 
-.start a{
+.btn{
     text-decoration: none;
     color: white;
-    background-color: rgb(26, 84, 199);
-    padding: 5px 15px;
+    background-color: rgb(26, 95, 199);
+    padding: 10px;
 }
 /* stile e colore */
 /* header */
+
+/* jumbo */
+
+.jumbo{
+    background-color: lightskyblue;
+    position: relative;
+
+}
+
+
+.jumbo-container::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.jumbo-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.jumbo-container h1{
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+
+.left p{
+    font-size: 16px;
+    margin: 30px 0;
+
+}
+
+.left i{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.ancor{
+    text-decoration: none;
+    color: inherit;
+}
+
+.jumbo-img{
+    width: 70%;
+    float: right;
+    margin-bottom: -100px;
+    margin-top: 30px;
+}
+
+.start-free{
+    display: block;
+}
+
+span{
+    margin: 20px 0;
+    display: block;
+    font-size: 14px;
+}
+/* jumbo */
+
+/* container-center */
+.container-center{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.container-center h1{
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+/* container-center */
+
+/* main */
+#plan label{
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.plan-container{
+    margin: 40px 0;
+}
+
+.plan-container::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.plan-container>div{
+    width: 30%;
+    float: left;
+    border: 2px solid lightgray;
+}
+
+#team{
+    margin: 0 4%;
+}
+
+.plan-title{
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+    margin: 0;
+    padding: 10px;
+}
+
+.textplan-container{
+    width: 84%;
+    margin: 30px auto;
+}
+
+.textplan-container> h2,.price,.condition,p,h3,h4,li{
+    margin-bottom: 20px;
+}
+
+.textplan-container> p,li{
+    font-size: 14px;
+}
+
+.condition{
+    color: gray;
+}
+
+.textplan-container .start-free{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.textplan-container .start-free .btn{
+    padding: 10px 20px;
+}
+
+.separator{
+    padding-bottom: 40px;
+    border-bottom: 2px solid lightgray;
+    display: inline-block;
+}
+
+.function_list{
+    list-style-type: none;
+}
+
+.function_list li::before{
+    content:"\2713 \0020";
+    color: rgb(1, 213, 228);
+    font-size: large;
+}
+/* main */
