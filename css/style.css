@@ -99,18 +99,18 @@ header{
 }
 
 
-.jumbo-container::after{
+.second-container::after{
     clear: both;
     display: table;
     content: "";
 }
 
-.jumbo-container{
+.second-container{
     width: 80%;
     margin: 0 auto;
 }
 
-.jumbo-container h1{
+.second-container h1{
     font-size: 60px;
     line-height: 80px;
 }
@@ -160,7 +160,7 @@ header{
 .container-center{
     width: 70%;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .container-center h1{
@@ -349,13 +349,16 @@ header{
 /* section 3 */
 
 /* section 4 */
+
 .finestra-team{
-    width: calc(100vw - 15px);
+    margin-top: 40px;
+    width: calc(100vw - 10px);
     height: 100vh;
 }
 .tabella-team{
     width: 100%;
-    height: 50%;
+    height: 405px;
+    background-color: rgb(245, 245, 245);
 }
 
 
@@ -364,6 +367,7 @@ header{
     display: table;
     clear: both;
 }
+
 
 .tabella-team::after{
     content: "";
@@ -391,7 +395,7 @@ header{
 
 .grid div{
     width: 49%;
-    height: 49%;
+    height: 50%;
     float: left;
 }
 
@@ -402,9 +406,17 @@ header{
 
 .central{
     float: left;
-    width: 40%; 
+    width: 40%;
+    padding: 20px;
 }
 
+.central img{
+    width: 100px;
+}
+
+.central p{
+    margin-top: 30px;
+}
 .grid .img{
     float: left;
 }
@@ -444,6 +456,103 @@ header{
 .banner{
     width: 100%;
     height: 50%;
+    background-color: rgb(180, 208, 231);
 }
+.banner .container-center{
+    position: relative;
+}
+
+.banner .container-center h1{
+    color: rgb(97, 8, 43);
+}
+
+.banner .container-center .start-free{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.btn_3{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 30px;
+    color: black;
+    font-size: 14px;
+}
+
 /* section 4 */
+
+/* section 5 faq */
+
+.faq{
+    margin-top: 60px;
+}
+
+.question-item{
+    border-top: 1px solid rgb(208, 208, 211);
+    padding: 30px 0;
+    position: relative;
+}
+
+.question-item i{
+    position: absolute;
+    right: 40px;
+    top: 36px;
+}
+
+.question{
+    padding-left: 5px;
+}
+
+.answer{
+    padding-right: 60px;
+    display: none;
+    padding-left: 5px;
+}
+
+.question-item:hover .answer{
+    display: block;  
+}
+
+.question-item:hover{
+    background-color: lightgray;
+}
+
+.last{
+    border-bottom: 1px solid rgb(208, 208, 211);
+}
+
+/* section 5 faq */
 /* main */
+
+/* footer */
+
+footer{
+    background-color: black;
+    padding: 50px 0;
+}
+
+footer .second-container{
+    color: white;
+}
+
+.footer-table{
+    margin: 60px 0;
+}
+
+td{
+    padding: 10px 20px;
+}
+
+tbody tr{
+    font-size: 16px;
+}
+
+thead tr{
+    font-size:x-large;
+}
+
+.language{
+    color: gray;
+}
+/* footer */
