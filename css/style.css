@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
 }
 /* header */
 /* Disposizione */
@@ -73,7 +84,7 @@ header{
 .btn{
     text-decoration: none;
     color: white;
-    background-color: rgb(26, 95, 199);
+    background-color: rgb(0, 97, 255);
     padding: 10px;
 }
 /* stile e colore */
@@ -138,7 +149,7 @@ header{
     display: block;
 }
 
-span{
+.plan-title, .left span{
     margin: 20px 0;
     display: block;
     font-size: 14px;
@@ -159,6 +170,23 @@ span{
 /* container-center */
 
 /* main */
+/* section 1 */
+#plan input[type="radio"] {
+    appearance: none;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid rgb(208, 208, 211);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#plan input[type="radio"]:checked {
+    background-color: white;
+    box-shadow: 0 0 0 5px rgb(0, 97, 255) inset;
+}
+
 #plan label{
     margin-right: 10px;
     margin-bottom: 30px;
@@ -180,8 +208,12 @@ span{
     border: 2px solid lightgray;
 }
 
+#advanced, #team, #singolo{
+    min-height: 990px;
+}
+
 #team{
-    margin: 0 4%;
+    margin: 0 5%;
 }
 
 .plan-title{
@@ -232,4 +264,186 @@ span{
     color: rgb(1, 213, 228);
     font-size: large;
 }
+
+#enterprise{
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+#enterprise .textplan-container{
+    width: 90%;
+}
+
+.call_us{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+/* section 1 */
+
+/* section 2 */
+.partner img{
+    width: 50%;
+    float: left;
+}
+
+.partner::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.textpartner-container{
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+}
+
+.partner_text{
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    padding: 20px;
+}
+
+.partner_text> h2,p{
+    margin-bottom: 20px;
+}
+
+.btn_2{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+/* section 2 */
+
+/* section 3 */
+.operation{
+    margin-top: 100px;
+}
+.operation::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.operation> div{
+    width: 30%;
+    margin: 30px auto;
+    float: left;
+}
+
+.operation div img{
+    width: 100%;
+}
+.operation div> h2{
+    margin-bottom: 20px;
+}
+.operation .middle{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* section 3 */
+
+/* section 4 */
+.finestra-team{
+    width: calc(100vw - 15px);
+    height: 100vh;
+}
+.tabella-team{
+    width: 100%;
+    height: 50%;
+}
+
+
+.grid::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tabella-team::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo-team {
+    filter: invert(0);
+    height: auto;
+    width: 200px;
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.grid img{
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    filter: invert(1);
+
+}
+
+.grid div{
+    width: 49%;
+    height: 49%;
+    float: left;
+}
+
+.grid{
+    float: left;
+    width: 30%;
+}
+
+.central{
+    float: left;
+    width: 40%; 
+}
+
+.grid .img{
+    float: left;
+}
+
+.grid img[src="img/designit.svg"] {
+    background-color: rgb(93, 44, 100);
+    border: 10px solid rgb(47, 22, 50);
+}
+
+.grid img[src="img/arizona_state_university.svg"] {
+    background-color: rgb(158, 247, 212);
+}
+
+.grid img[src="img/university_of_florida.svg"] {
+    background-color: rgb(255, 108, 49);
+}
+
+.grid img[src="img/topps.svg"] {
+    background-color: rgb(0, 227, 227);
+}
+
+.grid img[src="img/world_bicycle_relief.svg"] {
+    background-color: rgb(42, 255, 224);
+}
+
+.grid img[src="img/hearst_corp.svg"] {
+    background-color: rgb(75, 47, 24);
+}
+
+.grid img[src="img/lonely_planet.svg"] {
+    background-color: rgb(242, 219, 126);
+}
+.grid img[src="img/clear_channel.svg"] {
+    background-color: rgb(0, 39, 207);
+}
+
+.banner{
+    width: 100%;
+    height: 50%;
+}
+/* section 4 */
 /* main */
