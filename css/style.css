@@ -15,6 +15,11 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: both mandatory;
 }
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 /* header */
 /* Disposizione */
 header{
@@ -33,11 +38,7 @@ header{
     z-index: 999;
 }
 
-#main-nav::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
 .logo, .left-menu{
     float: left;
 }
@@ -98,12 +99,6 @@ header{
 
 }
 
-
-.second-container::after{
-    clear: both;
-    display: table;
-    content: "";
-}
 
 .second-container{
     width: 80%;
@@ -196,12 +191,6 @@ header{
     margin: 40px 0;
 }
 
-.plan-container::after{
-    clear: both;
-    display: table;
-    content: "";
-}
-
 .plan-container>div{
     width: 30%;
     float: left;
@@ -288,12 +277,6 @@ header{
     float: left;
 }
 
-.partner::after{
-    display: table;
-    content: "";
-    clear: both;
-}
-
 .textpartner-container{
     width: 50%;
     margin: 0 auto;
@@ -323,11 +306,6 @@ header{
 /* section 3 */
 .operation{
     margin-top: 100px;
-}
-.operation::after{
-    clear: both;
-    display: table;
-    content: "";
 }
 
 .operation> div{
@@ -359,20 +337,6 @@ header{
     width: 100%;
     height: 405px;
     background-color: rgb(245, 245, 245);
-}
-
-
-.grid::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.tabella-team::after{
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .logo-team {
